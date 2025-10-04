@@ -1,0 +1,1437 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/2/2025 1:43:41 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-CPG9G0OG"
+  DTS:CreatorName="LAPTOP-CPG9G0OG\ATIF"
+  DTS:DTSID="{7C3DBE2D-EB2F-4A60-AC18-B15376B7354C}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LocaleID="1055"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{F299D585-CEAE-464E-A175-E80770A23056}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FF_Sales1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6209851B-AE44-494A-A235-784C9F9B1C91}"
+      DTS:ObjectName="FF_Sales1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1055"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1254"
+          DTS:ConnectionString="C:\Users\ATIF\Downloads\Sales1.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ï»¿SalesID"
+              DTS:DTSID="{983246E6-9135-4526-B3EE-AD833C6342A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerID"
+              DTS:DTSID="{47BC684E-0C26-43BE-8CBF-D580ED2E2341}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Amount"
+              DTS:DTSID="{AFCF6259-C514-465F-B366-80F1DFB5304E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesDate"
+              DTS:DTSID="{6BD0616F-BECB-46E9-B19D-12BC80DDE77F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7E9738A2-4684-4043-AA1E-B088E2AB4BB6}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1055"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\ATIF\Downloads\Sales1.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesID"
+              DTS:DTSID="{66367109-EE80-47BC-A95B-F408E8134360}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerID"
+              DTS:DTSID="{59D314C3-5C61-4EBC-82AA-13A781824DC6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Amount"
+              DTS:DTSID="{E1994D2B-6183-4C24-BE12-245FE3329D8B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesDate"
+              DTS:DTSID="{4B9CCB1A-E32D-480D-827C-EB2A70377933}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{23E30F2B-01F2-447C-92DE-2D4EB072EE41}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1055"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\ATIF\Downloads\Sales1.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesID"
+              DTS:DTSID="{F3CB92C6-B1E8-48AF-B0DE-2D6577915BDD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerID"
+              DTS:DTSID="{ACF7B556-9760-4F8B-8ABE-89508CD1F20F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Amount"
+              DTS:DTSID="{FD7BC345-F8A9-43EF-B035-176393BB7078}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SalesDate"
+              DTS:DTSID="{20F058A7-483F-486E-8442-5A268967B817}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{79B0CC55-B517-492F-ACA5-4D03B621B112}"
+      DTS:ObjectName="LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-CPG9G0OG\SQLEXPRESS;Initial Catalog=ETL_Demo_2;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{79B0CC55-B517-492F-ACA5-4D03B621B112}LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{983AC2BF-2A7C-420D-9F51-ECD0ACDEED25}"
+      DTS:ObjectName="LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-CPG9G0OG\SQLEXPRESS;Initial Catalog=ETL_Demo_2;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{983AC2BF-2A7C-420D-9F51-ECD0ACDEED25}LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2 1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{19EA135F-C62C-4A05-A5DE-90D34B344A8D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{79B0CC55-B517-492F-ACA5-4D03B621B112}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.SalesHigh;&#xA;TRUNCATE TABLE dbo.SalesMedium;&#xA;TRUNCATE TABLE dbo.SalesLow;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sales Segmentation"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{CD7AB2CD-2D0E-41C8-A357-8803469A3A4E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sales Segmentation"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Sales Segmentation\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Sales Segmentation\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sales Segmentation\Conditional Split.Inputs[Conditional Split Input].Columns[Amount_numeric]"
+                      cachedDataType="decimal"
+                      cachedName="Amount_numeric"
+                      cachedScale="2"
+                      lineageId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output].Columns[Amount_numeric]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Sales Segmentation\Conditional Split.Outputs[HighSales]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="HighSales"
+                  synchronousInputId="Package\Sales Segmentation\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output].Columns[Amount_numeric]} &gt; 1000</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">Amount_numeric &gt; 1000</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Sales Segmentation\Conditional Split.Outputs[MediumSales]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="MediumSales"
+                  synchronousInputId="Package\Sales Segmentation\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output].Columns[Amount_numeric]} &gt;= 100 &amp;&amp; #{Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output].Columns[Amount_numeric]} &lt;= 1000</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">Amount_numeric &gt;= 100 &amp;&amp; Amount_numeric &lt;= 1000</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">1</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Sales Segmentation\Conditional Split.Outputs[LowSales]"
+                  description="Output 3 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="LowSales"
+                  synchronousInputId="Package\Sales Segmentation\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">#{Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output].Columns[Amount_numeric]} &lt; 100</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">Amount_numeric &lt; 100</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">2</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Sales Segmentation\Conditional Split.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Sales Segmentation\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Sales Segmentation\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Sales Segmentation\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Sales Segmentation\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Sales Segmentation\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sales Segmentation\Data Conversion.Inputs[Data Conversion Input].Columns[Amount]"
+                      cachedCodepage="1254"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Amount"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[Amount]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Sales Segmentation\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output].Columns[Amount_numeric]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output].Columns[Amount_numeric]"
+                      name="Amount_numeric"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[Amount]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Sales Segmentation\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Sales Segmentation\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1055"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Sales Segmentation\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[FF_Sales1]"
+                  connectionManagerRefId="Package.ConnectionManagers[FF_Sales1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerID]"
+                      codePage="1254"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerID]"
+                      length="50"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerID]"
+                      name="CustomerID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[Amount]"
+                      codePage="1254"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Amount]"
+                      length="50"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[Amount]"
+                      name="Amount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[SalesDate]"
+                      codePage="1254"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SalesDate]"
+                      length="50"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[SalesDate]"
+                      name="SalesDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿SalesID]"
+                      codePage="1254"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ï»¿SalesID]"
+                      length="50"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿SalesID]"
+                      name="ï»¿SalesID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerID]"
+                      codePage="1254"
+                      dataType="str"
+                      length="50"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Amount]"
+                      codePage="1254"
+                      dataType="str"
+                      length="50"
+                      name="Amount" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SalesDate]"
+                      codePage="1254"
+                      dataType="str"
+                      length="50"
+                      name="SalesDate" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ï»¿SalesID]"
+                      codePage="1254"
+                      dataType="str"
+                      length="50"
+                      name="ï»¿SalesID" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1254"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Sales Segmentation\SalesHigh_Dest"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="SalesHigh_Dest"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[SalesHigh]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1254</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Sales Segmentation\SalesHigh_Dest.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].Columns[ï»¿SalesID]"
+                      cachedCodepage="1254"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ï»¿SalesID"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleId]"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿SalesID]" />
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].Columns[SalesDate]"
+                      cachedCodepage="1254"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SalesDate"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleDate]"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[SalesDate]" />
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].Columns[CustomerID]"
+                      cachedCodepage="1254"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerID"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].ExternalColumns[CustomerId]"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerID]" />
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].Columns[Amount_numeric]"
+                      cachedDataType="decimal"
+                      cachedName="Amount_numeric"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
+                      lineageId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output].Columns[Amount_numeric]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleId]"
+                      dataType="i4"
+                      name="SaleId" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].ExternalColumns[CustomerId]"
+                      dataType="i4"
+                      name="CustomerId" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
+                      dataType="numeric"
+                      name="Amount"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleDate]"
+                      dataType="dbDate"
+                      name="SaleDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Sales Segmentation\SalesHigh_Dest.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sales Segmentation\SalesHigh_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\SalesHigh_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sales Segmentation\SalesHigh_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\SalesHigh_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Sales Segmentation\SalesLow_Dest"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="SalesLow_Dest"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[SalesLow]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1254</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Sales Segmentation\SalesLow_Dest.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].Columns[ï»¿SalesID]"
+                      cachedCodepage="1254"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ï»¿SalesID"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleId]"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿SalesID]" />
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].Columns[CustomerID]"
+                      cachedCodepage="1254"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerID"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].ExternalColumns[CustomerId]"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerID]" />
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].Columns[SalesDate]"
+                      cachedCodepage="1254"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SalesDate"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleDate]"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[SalesDate]" />
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].Columns[Amount_numeric]"
+                      cachedDataType="decimal"
+                      cachedName="Amount_numeric"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
+                      lineageId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output].Columns[Amount_numeric]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleId]"
+                      dataType="i4"
+                      name="SaleId" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].ExternalColumns[CustomerId]"
+                      dataType="i4"
+                      name="CustomerId" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
+                      dataType="numeric"
+                      name="Amount"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleDate]"
+                      dataType="dbDate"
+                      name="SaleDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Sales Segmentation\SalesLow_Dest.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sales Segmentation\SalesLow_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\SalesLow_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sales Segmentation\SalesLow_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\SalesLow_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Sales Segmentation\SalesMedium_Dest"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="SalesMedium_Dest"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[SalesMedium]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1254</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Sales Segmentation\SalesMedium_Dest.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-CPG9G0OG\SQLEXPRESS.ETL_Demo_2 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].Columns[ï»¿SalesID]"
+                      cachedCodepage="1254"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ï»¿SalesID"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleId]"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿SalesID]" />
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].Columns[CustomerID]"
+                      cachedCodepage="1254"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerID"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].ExternalColumns[CustomerId]"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerID]" />
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].Columns[SalesDate]"
+                      cachedCodepage="1254"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SalesDate"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleDate]"
+                      lineageId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output].Columns[SalesDate]" />
+                    <inputColumn
+                      refId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].Columns[Amount_numeric]"
+                      cachedDataType="decimal"
+                      cachedName="Amount_numeric"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
+                      lineageId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output].Columns[Amount_numeric]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleId]"
+                      dataType="i4"
+                      name="SaleId" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].ExternalColumns[CustomerId]"
+                      dataType="i4"
+                      name="CustomerId" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].ExternalColumns[Amount]"
+                      dataType="numeric"
+                      name="Amount"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input].ExternalColumns[SaleDate]"
+                      dataType="dbDate"
+                      name="SaleDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Sales Segmentation\SalesMedium_Dest.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sales Segmentation\SalesMedium_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\SalesMedium_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sales Segmentation\SalesMedium_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sales Segmentation\SalesMedium_Dest.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Sales Segmentation.Paths[Data Conversion Output]"
+              endId="Package\Sales Segmentation\Conditional Split.Inputs[Conditional Split Input]"
+              name="Data Conversion Output"
+              startId="Package\Sales Segmentation\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Sales Segmentation.Paths[Flat File Source Output]"
+              endId="Package\Sales Segmentation\Data Conversion.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Sales Segmentation\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Sales Segmentation.Paths[HighSales]"
+              endId="Package\Sales Segmentation\SalesHigh_Dest.Inputs[OLE DB Destination Input]"
+              name="HighSales"
+              startId="Package\Sales Segmentation\Conditional Split.Outputs[HighSales]" />
+            <path
+              refId="Package\Sales Segmentation.Paths[LowSales]"
+              endId="Package\Sales Segmentation\SalesLow_Dest.Inputs[OLE DB Destination Input]"
+              name="LowSales"
+              startId="Package\Sales Segmentation\Conditional Split.Outputs[LowSales]" />
+            <path
+              refId="Package\Sales Segmentation.Paths[MediumSales]"
+              endId="Package\Sales Segmentation\SalesMedium_Dest.Inputs[OLE DB Destination Input]"
+              name="MediumSales"
+              startId="Package\Sales Segmentation\Conditional Split.Outputs[MediumSales]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{ACB0D928-AC40-4352-9BF6-457372378A8E}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Sales Segmentation" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="143.333325501946,84.9333327427176" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Sales Segmentation"
+          TopLeft="159.166657970184,217.533331820634" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="225.733325501946,126.533332742718">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="19.0333324682381,90.9999990779162"
+              Start="0,0"
+              End="19.0333324682381,83.4999990779162">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.4999995389581" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.4999995389581"
+                    Point2="0,45.4999995389581"
+                    Point3="4,45.4999995389581" />
+                  <mssgle:LineSegment
+                    End="15.0333324682381,45.4999995389581" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15.0333324682381,45.4999995389581"
+                    Point2="19.0333324682381,45.4999995389581"
+                    Point3="19.0333324682381,49.4999995389581" />
+                  <mssgle:LineSegment
+                    End="19.0333324682381,83.4999990779162" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Sales Segmentation">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Sales Segmentation\Flat File Source"
+          TopLeft="65.9999990165233,40.9999993890524" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Sales Segmentation\SalesLow_Dest"
+          TopLeft="394.444422892951,316.814812611724" />
+        <NodeLayout
+          Size="168.8,41.6"
+          Id="Package\Sales Segmentation\SalesMedium_Dest"
+          TopLeft="199.999989072482,318.740738524257" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Sales Segmentation\SalesHigh_Dest"
+          TopLeft="25.5555541592615,315.755553359831" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Sales Segmentation\Data Conversion"
+          TopLeft="352.99999473989,42.9999993592501" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Sales Segmentation\Conditional Split"
+          TopLeft="186.999997213483,179.999997317791" />
+        <EdgeLayout
+          Id="Package\Sales Segmentation.Paths[LowSales]"
+          TopLeft="300.199997213483,221.599997317791">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="169.444425679468,95.2148152939332"
+              Start="0,0"
+              End="169.444425679468,87.7148152939332">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.8214892310145" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.8214892310145"
+                    Point2="0,32.8214892310145"
+                    Point3="4,32.8214892310145" />
+                  <mssgle:LineSegment
+                    End="165.444425679468,32.8214892310145" />
+                  <mssgle:CubicBezierSegment
+                    Point1="165.444425679468,32.8214892310145"
+                    Point2="169.444425679468,32.8214892310145"
+                    Point3="169.444425679468,36.8214892310145" />
+                  <mssgle:LineSegment
+                    End="169.444425679468,87.7148152939332" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="63.8546347147341,37.8214892310145,41.73515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sales Segmentation.Paths[HighSales]"
+          TopLeft="227.399997213483,221.599997317791">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-125.444443054222,94.1555560420398"
+              Start="0,0"
+              End="-125.444443054222,86.6555560420398">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.4563520827509" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.4563520827509"
+                    Point2="0,32.4563520827509"
+                    Point3="-4,32.4563520827509" />
+                  <mssgle:LineSegment
+                    End="-121.444443054222,32.4563520827509" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-121.444443054222,32.4563520827509"
+                    Point2="-125.444443054222,32.4563520827509"
+                    Point3="-125.444443054222,36.4563520827509" />
+                  <mssgle:LineSegment
+                    End="-125.444443054222,86.6555560420398" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-84.7497996521108,37.4563520827509,44.05515625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sales Segmentation.Paths[Flat File Source Output]"
+          TopLeft="217.199999016523,62.7999993741512">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="135.799995723367,0"
+              Start="0,0"
+              End="128.299995723367,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="128.299995723367,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sales Segmentation.Paths[Data Conversion Output]"
+          TopLeft="430.99999473989,84.5999993592501">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-167.199997526407,95.3999979585409"
+              Start="0,0"
+              End="-167.199997526407,87.8999979585409">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.6999989792705" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.6999989792705"
+                    Point2="0,47.6999989792705"
+                    Point3="-4,47.6999989792705" />
+                  <mssgle:LineSegment
+                    End="-163.199997526407,47.6999989792705" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-163.199997526407,47.6999989792705"
+                    Point2="-167.199997526407,47.6999989792705"
+                    Point3="-167.199997526407,51.6999989792705" />
+                  <mssgle:LineSegment
+                    End="-167.199997526407,87.8999979585409" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sales Segmentation.Paths[MediumSales]"
+          TopLeft="263.799997213483,221.599997317791">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.5999918589991,97.1407412064664"
+              Start="0,0"
+              End="20.5999918589991,89.6407412064664">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5703706032332" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,44.5703706032332"
+                    Point2="0,48.5703706032332"
+                    Point3="4,48.5703706032332" />
+                  <mssgle:LineSegment
+                    End="16.5999918589991,48.5703706032332" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.5999918589991,48.5703706032332"
+                    Point2="20.5999918589991,48.5703706032332"
+                    Point3="20.5999918589991,52.5703706032332" />
+                  <mssgle:LineSegment
+                    End="20.5999918589991,89.6407412064664" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-19.0375821955005,53.5703706032332,58.67515625,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sales Segmentation\SalesLow_Dest">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sales Segmentation\SalesMedium_Dest">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sales Segmentation\SalesHigh_Dest">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
